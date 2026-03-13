@@ -2,7 +2,7 @@ import React from 'react'
 import { Bookmark } from 'lucide-react'
 const Card = (props) => {
 
-  console.log(props)
+  // console.log(props)
   return (
    <div className="card">
        <div>

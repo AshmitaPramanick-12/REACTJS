@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './components/Card'
+import Card from './components/card'
 // import  User from './components/User'
 
 
@@ -50,7 +50,7 @@ const App = () => {
     location: "Hyderabad, India"
   },
   {
-    brandLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png",
+    brandLogo: "https://tse2.mm.bing.net/th/id/OIP.oRHnImi9ePYhAGib8VdjxwHaH_?pid=Api&P=0&h=180",
     company: "Apple",
     datePosted: "2 weeks ago",
     post: "Product Designer",
@@ -120,7 +120,7 @@ const App = () => {
     location: "Bangalore, India"
   }
 ];
-console.log(jobs);
+// console.log(jobs);
   return (
     <div className='parent'>
       {/* {arr} */}
@@ -149,12 +149,21 @@ console.log(jobs);
       )} */}
 
 
-        {jobs.map(function(elem){
+        {jobs.map(function(elem,idx){
           // return <h1>hey</h1>
           // return <h1>{elem.pay}</h1>
-          return <Card company={elem.company} post={elem.post}  tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location} datePosted={elem.datePosted} brandLogo={elem.brandLogo}/>
+          return <Card key={idx} company={elem.company} post={elem.post}  tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location} datePosted={elem.datePosted} brandLogo={elem.brandLogo}/>
         })}
 
+        {/* or  */}
+
+        {/* {jobs.map(function(elem,idx){
+          console.log(idx);
+          // return <h1>hey</h1>
+          // return <h1>{elem.pay}</h1>
+          return <div key={idx}><Card  company={elem.company} post={elem.post}  tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location} datePosted={elem.datePosted} brandLogo={elem.brandLogo}/></div>
+        })} */}
+ 
 
 
       
