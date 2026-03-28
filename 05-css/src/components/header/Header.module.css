@@ -1,0 +1,14 @@
+.header{
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+
+.logo{
+  text-decoration: underline;
+}
