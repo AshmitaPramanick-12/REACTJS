@@ -1,0 +1,15 @@
+var a=document.querySelector('h1');
+
+
+ so,
+
+function hero(){
+    console.log('hello guys I  am hero )
+}
+
+a.addEventListener('click',hero())
+or
+
+a.addEventListener('click',function(){
+    console.log('hello');
+})
