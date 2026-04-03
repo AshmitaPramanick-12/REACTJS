@@ -1,0 +1,19 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+button{
+  padding:10px 20px;
+  margin: 20px;
+}
+
+.H{
+  background-color: gainsboro;
+  width: fit-content;
+  font-size: 100px;
+  padding: 15px 90px;
+  border-radius: 5px;
+  margin: 20px;
+}
